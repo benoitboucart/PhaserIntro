@@ -30,9 +30,9 @@ const commonConfig = merge([
         },
         {
           test: /\.(jpe?g|png|svg|woff|woff2)$/,
-          loader: `url-loader`,
+          loader: `file-loader`,
           options: {
-            limit: 1000,
+            // limit: 1000,
             context: `./src`,
             name: `[path][name].[ext]`
           }
