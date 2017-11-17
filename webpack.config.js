@@ -21,6 +21,7 @@ const commonConfig = merge([
       path: PATHS.dist,
       filename: `js/script.[hash].js`
     },
+    devtool: 'source-map',
     module: {
       rules: [
         {
@@ -44,6 +45,9 @@ const commonConfig = merge([
       ]
     },
     plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })]
+    // ,externals: {
+    //     "PIXI": "PIXI"
+    // }
   }
 ]);
 
