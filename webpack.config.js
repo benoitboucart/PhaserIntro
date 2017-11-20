@@ -41,13 +41,16 @@ const commonConfig = merge([
           test: /\.(js)$/,
           exclude: /node_modules/,
           loader: `babel-loader`
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: "eslint-loader",
+          options: {}
         }
       ]
     },
     plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })]
-    // ,externals: {
-    //     "PIXI": "PIXI"
-    // }
   }
 ]);
 

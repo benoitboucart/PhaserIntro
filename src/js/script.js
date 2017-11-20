@@ -137,17 +137,30 @@ function update() {
 
 function collectStar (player, star) {
 
-    // Removes the star from the screen
-    star.kill();
-
-    //  Add and update the score
-    score += 10;
-    scoreText.text = 'Score: ' + score;
+    // // Removes the star from the screen
+    // star.kill();
+    //
+    // //  Add and update the score
+    // score += 10;
+    // scoreText.text = 'Score: ' + score;
 
 }
 
 
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import PIXI from "phaser/build/custom/pixi";
 // import p2 from "phaser/build/custom/p2";
 // import Phaser from "phaser";
